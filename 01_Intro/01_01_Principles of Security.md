@@ -4,13 +4,13 @@
 
 Pada bab ini, frameworks dan protocols yang dibahas adalah sebagian kecil dari “*Defence in Depth*” atau “Pertahanan di Kedalaman”.
 
-*Defence in Depth* adalah penggunaan beberapa lapisan keamanan yg bervariasi untuk sistem dan data organisasi degan harapan beberapa lapisan akan membuat redundansi di perimeter keamanan organisasi.
+*Defence in Depth* adalah penggunaan beberapa lapisan keamanan yang bervariasi untuk sistem dan data organisasi dengan harapan beberapa lapisan akan membuat redundansi di perimeter keamanan organisasi.
 
 ## The CIA Triad
 
-*CIA triad*  adalah sebuah model keamanan informasi yg digunakan dalam pertimbangkan selama pembuatan kebijakan keamanan. Model ini juga digunakan sebagai standar industri
+*CIA triad*  adalah sebuah model keamanan informasi yang digunakan dalam pertimbangan selama pembuatan kebijakan keamanan. Model ini juga digunakan sebagai standar industri dalam mengamankan data.
 
-Sejarah ini karena keamanan informasi tdk dimulai dan/ atau diakhiri dgn keamanan siber, tetapi berlaku untuk skenario pengarsipan, penyimpanan record, dll.
+Sejarah berawal dari keamanan informasi tidak dimulai dan/ atau diakhiri dengan keamanan siber, tetapi berlaku juga untuk skenario pengarsipan, penyimpanan record, dll.
 
 Terdiri dari 3 bagian:
 
@@ -20,7 +20,7 @@ Terdiri dari 3 bagian:
 ![CIA Triad](https://www.certmike.com/wp-content/uploads/2018/08/cia_triad.png) 
 ### Confidentiality (”Kerahasiaan”)
 
-Elemen ini “*melindungi data dari akses dan penyalahgunaan yg tidak sah”*. Memberikan kerahasiaan berarti melindungi data dari pihak-pihak yg tidak dimaksudkan.
+Elemen ini “*melindungi data dari akses dan penyalahgunaan yangg tidak sah”*. Memberikan kerahasiaan berarti melindungi data dari pihak-pihak yang tidak dimaksudkan.
 
 Contoh:
 
@@ -30,7 +30,7 @@ Misalnya, catatan karyawan dan dokumen akuntansi akan dianggap sensitif. Kerahas
 
 *“Kondisi di mana informasi disimpan secara akurat dan konsisten, kecuali jika ada perubahan yg diizinkan.”*
 
-Ini memungkinkan informasi berubah karena akses dan penggunaan yang ceroboh, kesalahan dl sistem informasi, atau akses dan penggunaan yg tidak sah.
+Ini memungkinkan informasi berubah karena akses dan penggunaan yang ceroboh, kesalahan dalam sistem informasi, atau akses dan penggunaan yang tidak sah.
 
 Dalam triad CIA, integritas dipertahankan ketika informasi tetap tidak berubah selama penyimpanan, transmisi, dan penggunaan tidak melibatkan modifikasi informasi. Langkah-langkah harus diambil untuk memastikan data tidak dapat diubah oleh orang yang tidak berwenang (misalnya, dalam pelanggaran kerahasiaan).
 
@@ -38,7 +38,7 @@ Dalam triad CIA, integritas dipertahankan ketika informasi tetap tidak berubah s
 
 Agar data bermanfaat, data harus tersedia dan dapat diakses oleh pengguna.
 
-Perhatian utama dalam CIA Triad adalah bahwa informasi harus tersedia ketika pengguna yg berwenang perlu mengaksesnya.
+Perhatian utama dalam CIA Triad adalah bahwa informasi harus tersedia ketika pengguna yang berwenang perlu mengaksesnya.
 
 *Availability* sangat sering menjadi tolak ukur utama bagi sebuah perusahaan. 
 
@@ -59,7 +59,7 @@ Ini sangat penting untuk mengatur dan mendefinisikan dengan benar berbagai tingk
 - Peran/ fungsi individu di dalam organisasi.
 - Informasi sensitif yg disimpan pada sistem.
 
-Dua konsep ini digunakan untuk memberi dan mengatur akses yg benar pada individu. Dua konsep ini digunakan pada ***Privileged Identity Management (PIM)*** dan ***Privileged Access Management (PAM)***.
+Dua konsep ini digunakan untuk memberi dan mengatur akses yang benar pada individu. Dua konsep ini digunakan pada ***Privileged Identity Management (PIM)*** dan ***Privileged Access Management (PAM)***.
 
 ---
 
@@ -69,7 +69,7 @@ Dua konsep ini digunakan untuk memberi dan mengatur akses yg benar pada individu
 
 ---
 
-Sederhananya, *privilege* merupakan pengguna yg diberikan jumlah minimum hak istimewa, dan hanya yg benar-benar diperlukan bagi mereka untuk melakukan tugasnya. Orang lain harus percaya terhadap apa yg orang tersebut tulis.
+Sederhananya, *privilege* merupakan pengguna yang diberikan jumlah minimum hak istimewa, dan hanya yang benar-benar diperlukan bagi mereka untuk melakukan tugasnya. Orang lain harus percaya terhadap apa yang orang tersebut tulis.
 
 Seperti yang disebutkan sebelumnya, PAM menggabungkan lebih dari menetapkan akses. Ini juga mencakup penegakan kebijakan keamanan seperti manajemen kata sandi, kebijakan audit, dan pengurangan permukaan serangan yang dihadapi sistem.
 <br>
