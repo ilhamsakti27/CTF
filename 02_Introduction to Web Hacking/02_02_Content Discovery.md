@@ -90,3 +90,19 @@ Kita dapat menggunakan fitur pencarian GitHub untuk mencari nama perusahaan atau
 
 ### OSINT - S3 Buckets
 S3 Buckets adalah layanan penyimpanan yang disediakan oleh Amazon AWS, memungkinkan orang untuk menyimpan file dan bahkan konten situs web statis di cloud yang dapat diakses melalui HTTP dan HTTPS. Pemilik file dapat mengatur izin akses untuk menjadikan file publik, pribadi, dan bahkan dapat ditulis. Terkadang izin akses ini tidak disetel dengan benar dan secara tidak sengaja mengizinkan akses ke file yang seharusnya tidak tersedia untuk umum. Format ember S3 adalah http(s)://{name}.s3.amazonaws.com di mana {name} ditentukan oleh pemiliknya, seperti tryhackme-assets.s3.amazonaws.com. S3 Buckets dapat ditemukan dengan banyak cara, seperti menemukan URL di sumber halaman situs web, repositori GitHub, atau bahkan mengotomatiskan proses. Salah satu metode otomatisasi yang umum adalah dengan menggunakan nama perusahaan diikuti dengan istilah umum seperti {name}-assets, {name}-www, {name}-public, {name}-private, dll.
+
+## Automated Discovery
+
+### What is Automated Discovery?
+**Automated Discovery** adalah proses menggunakan tools untuk menemukan konten daripada melakukannya secara manual. Proses ini otomatis karena biasanya berisi ratusan, ribuan atau bahkan jutaan permintaan ke server web. Permintaan ini memeriksa apakah file atau direktori ada di situs web, memberi kami akses ke sumber daya yang sebelumnya tidak kami ketahui keberadaannya. Proses ini dimungkinkan dengan menggunakan sumber daya yang disebut *wordlist*.
+
+Wordlist adalah file .txt yang berisikan daftar nama, password, atau hal lainnya yang akan dicocokkan satu-persatu melalui sebuah tools. Biasanya, wordlist berisi banyak kata dari puluhan hingga ratusan ribu kata.
+
+### Automation Tools
+Berikut adalah beberapa contoh tools untuk melakukan Automated Discovery:
+
+- ffuf : `ffuf -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://MACHINE_IP/FUZZ`
+- dirb : `dirb http://MACHINE_IP/ /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt`
+- Gobuster : `gobuster dir --url http://MACHINE_IP/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt`
+
+Ketiga command tersebut memiliki tujuan yang sama, menemukan sub-direktori dalam web.
