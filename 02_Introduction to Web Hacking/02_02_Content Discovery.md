@@ -34,7 +34,7 @@ Kadang, ketika framework digunakan untuk membangun situs web, favicon yang merup
 ### Sitemap.xml
 Tidak seperti file `robots.txt`, yang membatasi apa yang dapat dilihat oleh search engine, file `sitemap.xml` memberikan daftar setiap file yang ingin dicantumkan pemilik situs web di search engine. Ini terkadang dapat berisi area situs web yang sedikit lebih sulit untuk dinavigasi atau bahkan mencantumkan beberapa halaman web lama yang tidak lagi digunakan oleh situs saat ini tetapi masih berfungsi di belakang layar.
 
-Pada machine ini, `sitemap.xml` dapat ditemukan di [http://10.10.231.155/sitemap.xml](http://10.10.231.155/sitemap.xml).
+Pada machine ini, `sitemap.xml` dapat ditemukan di http://MACHINE_IP/sitemap.xml.
 
 ### HTTP Headers
 Saat kita membuat request ke server web, server mengembalikan berbagai header HTTP. Header ini terkadang dapat berisi informasi yang berguna seperti perangkat lunak server web dan mungkin bahasa pemrograman/script yang digunakan. Pada contoh di bawah ini, kita dapat melihat server web adalah NGINX versi 1.18.0 dan menjalankan PHP versi 7.4.3. Dengan menggunakan informasi ini, kita dapat menemukan versi perangkat lunak yang rentan digunakan. Coba jalankan perintah curl di bawah ini terhadap server web, di mana -v switch mengaktifkan mode verbose, yang akan menampilkan header.
@@ -61,7 +61,7 @@ user@machine$ curl http://10.10.231.155 -v
 ### Framework Stack
 Setelah kita membuat framework situs web, baik dari contoh favicon di atas atau dengan mencari petunjuk di sumber halaman seperti komentar, pemberitahuan hak cipta, atau kredit, kita kemudian dapat menemukan situs web framework tersebut. Dari sana, kami dapat mempelajari lebih lanjut tentang perangkat lunak dan informasi lainnya, yang mungkin mengarah ke lebih banyak konten yang dapat kami temukan.
 
-Dalam url http://10.10.170.158, jika kita meng-inspect element. Dibagian bawah script html terdapat comment yang memberitahu bahwa website ini menggunakan framework tersebut.
+Dalam url http://MACHINE_IP, jika kita meng-inspect element. Dibagian bawah script html terdapat comment yang memberitahu bahwa website ini menggunakan framework tersebut.
 
 ## OSINT (Open-Source Intellegence)
 
