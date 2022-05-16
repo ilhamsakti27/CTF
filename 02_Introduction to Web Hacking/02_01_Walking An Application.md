@@ -65,13 +65,13 @@ Coba untuk melihat ***page source*** dari *home page* Acme IT Support website.
 
 ![gambar4](images/02_01_04.png)
 
-Pada bagian atas halaman, Anda akan melihat beberapa kode yang dimulai dengan `<!--`dan diakhiri dengan `-->`komentar. Komentar adalah pesan yang ditinggalkan oleh pengembang situs web, biasanya untuk menjelaskan sesuatu dalam kode kepada pemrogram lain atau bahkan catatan/pengingat untuk diri mereka sendiri. Komentar ini tidak ditampilkan di halaman web yang sebenarnya. Komentar ini menjelaskan bagaimana *homepage* bersifat sementara sementara yang baru sedang dalam pengembangan. Lihat halaman web di komentar untuk mendapatkan *flagnya*.
+Pada bagian atas halaman, Anda akan melihat beberapa kode yang dimulai dengan `<!--`dan diakhiri dengan `-->`komentar. Komentar adalah pesan yang ditinggalkan oleh pengembang situs web, biasanya untuk menjelaskan sesuatu dalam kode kepada pemrogram lain atau bahkan catatan/pengingat untuk diri mereka sendiri. Komentar ini tidak ditampilkan di halaman web yang sebenarnya. Komentar ini menjelaskan bagaimana *homepage* bersifat sementara karena web page yang baru sedang dalam pengembangan. Lihat halaman web di komentar untuk mendapatkan *flagnya*.
 
 Tautan ke halaman yang berbeda dalam HTML ditulis dalam *anchor tags* ( ini adalah elemen HTML yang dimulai dengan `<a`), dan tautan yang akan  dituju disimpan dalam `href`atribut. Contohnya, Anda akan melihat tautan ke *contact page* pada *line* 30.
 
 ![gambar5](images/02_01_05.png)
 
-Jika Anda melihat lebih jauh ke *page source*, ada tautan tersembunyi ke halaman yang dimulai dengan "secret", lihat link ini untuk mendapatkan *flag* lain. Anda jelas tidak akan mendapatkan *flag* dalam *real case*, tetapi Anda mungkin menemukan beberapa area pribadi ataupun sensitif yang digunakan oleh bisnis untuk menyimpan informasi perusahaan/staf/pelanggan.
+Jika Anda melihat lebih jauh ke *page source*, ada tautan tersembunyi ke halaman yang dimulai dengan "secret", lihat link ini untuk mendapatkan *flag*nya. Anda jelas tidak akan mendapatkan *flag* dalam *real case*, tetapi Anda mungkin menemukan beberapa area pribadi ataupun sensitif yang digunakan oleh bisnis untuk menyimpan informasi perusahaan/staf/pelanggan.
 
 ![gambar6](images/02_01_06.png)
 
@@ -136,7 +136,7 @@ Untuk membuka *developer tools*, klik roda gigi pada bagian kanan-atas browser k
 
 ### Inspector
 
-*Page source* tidak selalu merepresentasikan apa yang ada pada *webpage*. Hal ini karena CSS, JS, dan *user interaction* dan merubah konten dan style dari halaman, yang berarti kita memerlukan cara untuk melihat apa yang telah ditampilkan di *browser window* pada waktu yang tepat. *Element inspector* membantu kita dengan menyediakan represntasi langsung dari apa yang saat ini ada pada situs web.
+*Page source* tidak selalu merepresentasikan apa yang ada pada *webpage*. Hal ini karena CSS, JS, dan *user interaction* akan merubah konten dan style dari halaman, yang berarti kita memerlukan cara untuk melihat apa yang telah ditampilkan di *browser window* pada waktu yang tepat. *Element inspector* membantu kita dengan menyediakan represntasi langsung dari apa yang saat ini ada pada situs web.
 
 Selain melihat tampilan langsung, kita juga dapat mengedit dan berinteraksi dengan elemen halaman, yang berguna bagi pengembang web untuk men-debug masalah.
 
@@ -146,7 +146,7 @@ Dua artikel pada website ini dapat dibaca, tetapi artikel ketiga telah diblokir 
 
 ![gambar18](images/02_01_18.png)
 
-Klik kanan pada pemberitahuan premium ( paywall ), Anda seharusnya dapat memilih opsi *Inspect* dari menu, yang membuka *developer tools* baik di sisi bawah atau kanan tergantung pada browser atau preferensi Anda. Sekarang Anda akan melihat elemen/HTML yang membentuk situs web (mirip dengan tangkapan layar di bawah).
+Klik kanan pada pemberitahuan premium ( *paywall* ), Anda seharusnya dapat memilih opsi *Inspect* dari menu, yang membuka *developer tools* baik di sisi bawah atau kanan tergantung pada browser atau preferensi Anda. Sekarang Anda akan melihat elemen/HTML yang membentuk situs web (mirip dengan tangkapan layar di bawah).
 
 ![gambar19](images/02_01_19.png)
 
@@ -166,22 +166,22 @@ Sering kali saat melihat file javascript, Anda akan melihat bahwa semuanya berad
 
 ![gambar21](images/02_01_21.png)
 
-Kita dapat mengembalikan beberapa pemformatan dengan menggunakan opsi "***Pretty Print***", yang terlihat seperti dua kurung kurawal {} untuk membuatnya sedikit lebih mudah dibaca, meskipun karena kebingungan, masih sulit untuk memahami apa yang terjadi dengan file tersebut. Jika Anda scroll ke bagian bawah file flash.min.js, Anda akan melihat baris:`**flash['remove']();**`
+Kita dapat mengembalikan beberapa pemformatan dengan menggunakan opsi "***Pretty Print***", yang terlihat seperti dua kurung kurawal **{}** untuk membuatnya sedikit lebih mudah dibaca, meskipun karena kebingungan, masih sulit untuk memahami apa yang terjadi dengan file tersebut. Jika Anda scroll ke bagian bawah file flash.min.js, Anda akan melihat baris:`flash['remove']();`
 
 ![gambar22](images/02_01_22.png)
 
-Sedikit JavaScript inilah yang menghapus popup merah dari halaman. Kita dapat memanfaatkan fitur debugger lain yang disebut ***breakpoints***. Ini adalah poin dalam kode yang kita dapat memaksa browser untuk berhenti memproses JavaScript dan menghentikan sementara (*pause)* eksekusi saat ini (sesuai penanda). Saat aplikasi berhenti, secara otomatis *DevTools* akan melakukan *State Dumping,* sehingga kita dapat berinteraksi secara langsung dengan aplikasi via *Console*
+Kode JavaScript inilah yang menghapus popup merah dari halaman. Kita dapat memanfaatkan fitur debugger lain yang disebut ***breakpoints***. Ini adalah poin dalam kode yang kita dapat memaksa browser untuk berhenti memproses JavaScript dan menghentikan sementara (*pause)* eksekusi saat ini (sesuai penanda). Saat aplikasi berhenti, secara otomatis *DevTools* akan melakukan *State Dumping,* sehingga kita dapat berinteraksi secara langsung dengan aplikasi via *Console*
 
-Jika Anda mengklik nomor baris yang berisi kode di atas, Anda akan melihatnya berubah menjadi biru; Anda sekarang telah memasukkan breakpoint pada baris ini. Sekarang coba segarkan halaman, dan Anda akan melihat kotak merah tetap berada di halaman alih-alih menghilang, dan berisi sebuah ***flag***.
+Jika Anda mengklik nomor baris yang berisi kode di atas, Anda akan melihatnya berubah menjadi biru; Anda sekarang telah memasukkan breakpoint pada baris ini. Sekarang coba *refresh* halaman, dan Anda akan melihat kotak merah tetap berada di halaman alih-alih menghilang, dan berisi sebuah ***flag***.
 
 ![gambar23](images/02_01_23.png)
 
 ## **Developer Tools - Network**
 
-Tab *network* pada *DevTools* dapat digunakan untuk melacak setiap *external request* yang dibuat halaman web. Jika Anda mengklik tab *Network* dan kemudian *refresh* halaman, Anda akan melihat semua file yang diminta halaman tersebut.
+Tool *network* pada *DevTools* dapat digunakan untuk melacak setiap *external request* yang dibuat halaman web. Jika Anda mengklik tab *Network* dan kemudian *refresh* halaman, Anda akan melihat semua file yang diminta halaman tersebut.
 
 ![gambar24](images/02_01_24.png)
 
-Coba lakukan ini pada *contact page.* Dengan tab *network* terbuka, coba isi *form contact* dan tekan tombol “***Send Message***”. Anda akan melihat sebuah *event* di tab jaringan, dan ini adalah formulir yang dikirimkan di *background* menggunakan metode yang disebut **AJAX**. **AJAX** adalah metode untuk mengirim dan menerima data jaringan pada *background web application* tanpa mengganggu dengan mengubah halaman web saat ini.
+Coba lakukan ini pada *contact page.* Dengan tab *network* terbuka, coba isi *form contact* dan tekan tombol “***Send Message***”. Anda akan melihat sebuah *event* di menu *network*, dan ini adalah formulir yang dikirimkan di *background* menggunakan metode yang disebut **AJAX**. **AJAX** adalah metode untuk mengirim dan menerima data jaringan pada *background web application* tanpa mengganggu dengan mengubah halaman web saat ini.
 
 Periksa entri baru pada tab *network* yang dibuat oleh *form contact* dan lihat halaman tempat data dikirim untuk mengungkapkan ***flag***.
