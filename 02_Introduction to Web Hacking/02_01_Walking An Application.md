@@ -184,4 +184,4 @@ Tool *network* pada *DevTools* dapat digunakan untuk melacak setiap *external re
 
 Coba lakukan ini pada *contact page.* Dengan tab *network* terbuka, coba isi *form contact* dan tekan tombol “***Send Message***”. Anda akan melihat sebuah *event* di menu *network*, dan ini adalah formulir yang dikirimkan di *background* menggunakan metode yang disebut **AJAX**. **AJAX** adalah metode untuk mengirim dan menerima data jaringan pada *background web application* tanpa mengganggu dengan mengubah halaman web saat ini.
 
-Periksa entri baru pada tab *network* yang dibuat oleh *form contact* dan lihat halaman tempat data dikirim untuk mengungkapkan ***flag***.
+Periksa entri baru pada menu *network* yang dibuat oleh *form contact* dan lihat halaman tempat data dikirim untuk mengungkapkan ***flag***.
