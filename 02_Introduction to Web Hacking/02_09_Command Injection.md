@@ -160,4 +160,4 @@ Untuk menembus kita dapat menggunakan `&&` setelah input ip atau menggunkan `|` 
 
 ![Gambar12](images/02_09_12.png)
 
-Berikut merupkan [cheat sheet](https://github.com/payloadbox/command-injection-payload-list) terkait *commad injection payload.*
+Berikut merupakan [cheat sheet](https://github.com/payloadbox/command-injection-payload-list) terkait *commad injection payload.*
