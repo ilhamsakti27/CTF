@@ -25,7 +25,7 @@ Contoh kegiatan active reconnaissance meliputi:
 - Memanggil perusahaan dalam upaya mendapatkan informasi (social engineering).
 - Memasuki tempat perusahaan berpura-pura menjadi tukang reparasi.
 
-Mempertimbangkan sifat invasif dari active reconnaissance, seseorang dapat dengan cepat mendapat masalah hukum kecuali seseorang memperoleh otorisasi hukum yang tepat.
+Mempertimbangkan sifat invasif dari active reconnaissance, seseorang dapat dengan cepat mendapat masalah hukum kecuali ia memperoleh otorisasi hukum yang tepat.
 
 ## whois
 
@@ -68,7 +68,7 @@ For more information on Whois status codes, please visit https://icann.org/epp
 
 Kita bisa melihat banyak informasi; kita akan memeriksanya sesuai urutan yang ditampilkan. Pertama, kita melihat bahwa kita diarahkan ke `whois.namecheap.com` untuk mendapatkan informasi kita. Dalam kasus ini dan saat ini, `namecheap.com` mempertahankan catatan WHOIS untuk nama domain ini. Selanjutnya, kita dapat melihat tanggal pembuatan beserta tanggal pembaruan terakhir dan tanggal kedaluwarsa.
 
-Selanjutnya, kita memperoleh informasi tentang registrar dan registrant. kita dapat menemukan nama pendaftar dan informasi kontak kecuali mereka menggunakan beberapa layanan privasi. Meskipun tidak ditampilkan di atas, kita mendapatkan kontak admin dan teknis untuk domain ini. Akhirnya, kita melihat server nama domain yang harus kita tanyakan jika kita memiliki catatan DNS untuk dicari.
+Selanjutnya, kita memperoleh informasi tentang registrar dan registrant. kita dapat menemukan nama pendaftar dan informasi kontak kecuali mereka menggunakan beberapa layanan privasi. Meskipun tidak ditampilkan di atas, kita mendapatkan kontak admin dan teknis untuk domain ini.
 
 Informasi yang dikumpulkan dapat diperiksa untuk menemukan permukaan serangan baru, seperti rekayasa sosial atau serangan teknis. Misalnya, tergantung pada ruang lingkup uji penetrasi, Anda dapat mempertimbangkan serangan terhadap server email pengguna admin atau server DNS, dengan asumsi mereka dimiliki oleh klien Anda dan termasuk dalam ruang lingkup uji penetrasi.
 
@@ -78,7 +78,7 @@ Penting untuk dicatat bahwa karena alat otomatis menyalahgunakan kueri WHOIS unt
 
 Pada tugas sebelumnya, kita menggunakan protokol WHOIS untuk mendapatkan berbagai informasi tentang nama domain yang kita cari. Secara khusus, kita bisa mendapatkan server DNS dari registrar.
 
-Temukan alamat IP nama domain menggunakan `nslookup`, yang merupakan singkatan dari Name Server Look Up. Anda perlu mengeluarkan perintah `nslookup DOMAIN_NAME`, misalnya, `nslookup tryhackme.com`. Atau, secara lebih umum, Anda dapat menggunakan `NSlookup OPTIONS DOMAIN_NAME SERVER`. Ketiga parameter utama tersebut adalah:
+Temukan alamat IP nama domain menggunakan `nslookup`, yang merupakan singkatan dari Name Server Look Up. Anda perlu mengeluarkan perintah `nslookup DOMAIN_NAME`, misalnya, `nslookup tryhackme.com`. Atau, secara lebih umum, Anda dapat menggunakan `nslookup OPTIONS DOMAIN_NAME SERVER`. Ketiga parameter utama tersebut adalah:
 
 - **OPTIONS** berisi jenis kueri seperti yang ditunjukkan pada tabel di bawah ini. Misalnya, Anda dapat menggunakan A untuk alamat IPv4 dan AAAA untuk alamat IPv6.
 - **DOMAIN_NAME** adalah nama domain yang Anda cari.
@@ -160,20 +160,20 @@ DNSDumpster juga akan merepresentasikan informasi yang dikumpulkan secara grafis
 
 Saat Anda ditugaskan untuk menjalankan uji penetrasi terhadap target tertentu, sebagai bagian dari fase pengintaian pasif, layanan seperti [Shodan.io](https://www.shodan.io/) dapat membantu mempelajari berbagai informasi tentang jaringan klien, tanpa terhubung secara aktif ke jaringan tersebut. Selanjutnya, di sisi defensif, Anda dapat menggunakan layanan yang berbeda dari Shodan.io untuk mempelajari tentang perangkat yang terhubung dan terbuka milik organisasi Anda.
 
-Shodan.io mencoba terhubung ke setiap perangkat yang dapat dijangkau secara online untuk membangun mesin pencari dari "hal-hal" yang terhubung berbeda dengan mesin pencari untuk halaman web. Setelah mendapat tanggapan, ia mengumpulkan semua informasi yang terkait dengan layanan dan menyimpannya dalam database untuk membuatnya dapat dicari. Pertimbangkan catatan yang disimpan dari salah satu server tryhackme.com.
+Shodan.io mencoba terhubung ke setiap perangkat yang dapat dijangkau secara online untuk membangun mesin pencari dari "hal-hal" yang terhubung berbeda dengan mesin pencari untuk halaman web. Setelah mendapat response, ia mengumpulkan semua informasi yang terkait dengan layanan dan menyimpannya dalam database untuk membuatnya dapat dicari. Pertimbangkan catatan yang disimpan dari salah satu server tryhackme.com.
 
 ![](images/04_01_4.png)
 
 Catatan ini menunjukkan server web; namun, seperti yang telah disebutkan, Shodan.io mengumpulkan informasi yang terkait dengan perangkat apa pun yang dapat ditemukan terhubung secara online. Mencari tryhackme.com di Shodan.io akan menampilkan setidaknya catatan yang ditunjukkan pada tangkapan layar di atas. Melalui hasil pencarian Shodan.io ini, kita dapat mempelajari beberapa hal terkait pencarian kita, seperti:
 
-alamat IP
-perusahaan hosting
-lokasi geografis
-jenis dan versi server
+- alamat IP
+- perusahaan hosting
+- lokasi geografis
+- jenis dan versi server
 
 ## Summary
 
-Di ruangan ini, kita fokus pada passive reconnaissance. Secara khusus, kita membahas alat baris perintah, `whois`, `nslookup`, dan `dig`. Kita juga membahas dua layanan `DNSDumpster` dan `Shodan.io` yang tersedia untuk umum. Kekuatan alat tersebut adalah Anda dapat mengumpulkan informasi tentang target Anda tanpa terhubung langsung ke mereka. Selain itu, kumpulan informasi yang mungkin Anda temukan menggunakan alat semacam itu bisa sangat besar setelah Anda menguasai opsi pencarian dan terbiasa membaca hasilnya.
+Secara khusus, kita membahas alat baris perintah, `whois`, `nslookup`, dan `dig`. Kita juga membahas dua layanan `DNSDumpster` dan `Shodan.io` yang tersedia untuk umum. Kekuatan alat tersebut adalah Anda dapat mengumpulkan informasi tentang target Anda tanpa terhubung langsung ke mereka. Selain itu, kumpulan informasi yang mungkin Anda temukan menggunakan alat semacam itu bisa sangat besar setelah Anda menguasai opsi pencarian dan terbiasa membaca hasilnya.
 
 | Tujuan | Commandline Example |
 | ------ | ------------------- |
