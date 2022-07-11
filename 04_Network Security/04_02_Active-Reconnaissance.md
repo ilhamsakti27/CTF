@@ -176,3 +176,13 @@ Perhatikan contoh berikut. Di sisi server, kita akan mendengarkan pada port 123
 ## Ringkasan
 
 Sangat mudah untuk menyatukan beberapa dari mereka melalui skrip shell untuk membangun jaringan primitif dan pemindai sistem. Kita dapat menggunakan `traceroute`untuk memetakan jalur ke target, `ping`untuk memeriksa apakah sistem target merespons ICMP Echo, dan `telnet`untuk memeriksa port mana yang terbuka dan dapat dijangkau dengan mencoba menghubungkannya.
+
+| Perintah | Contoh | 
+| --- | --- |
+| ping | ping -c 10 MACHINE_IPdi Linux atau macOS |
+| ping | ping -n 10 MACHINE_IPdi MS Windows |
+| traceroute | traceroute MACHINE_IPdi Linux atau macOS |
+| tracert | tracert MACHINE_IPdi MS Windows |
+| telnet | telnet MACHINE_IP PORT_NUMBER |
+| netcat as client | nc MACHINE_IP PORT_NUMBER |
+| netcat as server | nc -lvnp PORT_NUMBER | 
